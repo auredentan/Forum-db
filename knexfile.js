@@ -7,4 +7,9 @@ module.exports = {
     connection: 'postgres://localhost/auredentan-forum',
   },
 
+  production: {
+    client: 'pg',
+    connection: process.env.DATABASE_URL,
+  },
+
 };
